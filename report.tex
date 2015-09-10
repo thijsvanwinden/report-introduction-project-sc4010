@@ -1,0 +1,42 @@
+\documentclass[a4paper,twoside]{report} % For a 'report style' document. See online for more document classes.
+\usepackage{float,amsmath,graphicx,color,framed,subfiles}
+\usepackage{amssymb,subcaption,textcomp,listings}
+\usepackage{booktabs,epstopdf,caption,units}
+\usepackage[table]{xcolor}
+\usepackage{subfiles}
+
+\title{SC4010 Introduction Project SC\\Exercice 0 and 1}
+\author{  Aarnts, T.J\\
+  \texttt{4151569}
+  \and
+  Putter, Y.C.C\\
+  \texttt{41556560}
+  \and
+  Winden van, M,H\\
+  \texttt{4175883}
+  }
+\graphicspath{ {./images/} } % LateX will look in project/img/ folder for images
+
+
+\begin{document}
+% Create title page with figures
+
+\maketitle
+\thispagestyle{empty} % To prevent a page number on the bottom of the page
+
+
+\newpage
+\tableofcontents % To automatically create a table of contents from the \section and \subsection commands.
+
+\newpage
+\input{intro.tex}
+
+\newpage
+\input{ex0}
+
+
+\subfile{ex1a}
+
+
+
+\end{document}

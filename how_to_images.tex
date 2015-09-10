@@ -1,0 +1,14 @@
+
+\section{Including figures in your report}
+
+
+You can insert figures such as Figure \ref{fig:intro_system}. The \verb|\ref{...}|-command will search for an item somewhere in your report that contains a \verb|\label{...}| with the same description. Try to always use high-quality images like .pdf or .eps. In Matlab, you can choose to save a figure as one of these file types instead of .jpg or .png.
+
+
+\begin{figure}[H] % The [H]-command (here) makes sure that lateX places the figure where you put this piece of code. If you want LateX to decide where the figure will be, [H] can be omitted.
+		\includegraphics[width=0.8\textwidth]{system_response.pdf}
+		\centering
+		\caption{Your figures should always be explained by a caption text.}
+		\label{fig:intro_system}
+\end{figure}
+
