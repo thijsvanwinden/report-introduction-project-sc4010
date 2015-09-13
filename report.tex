@@ -1,4 +1,4 @@
-\documentclass[a4paper,twoside]{report} % For a 'report style' document. See online for more document classes.
+\documentclass[a4paper]{report} % For a 'report style' document. See online for more document classes.
 \usepackage{float,amsmath,graphicx,color,framed,subfiles}
 \usepackage{amssymb,subcaption,textcomp,listings}
 \usepackage{booktabs,epstopdf,caption,units}
@@ -29,16 +29,9 @@
 \tableofcontents % To automatically create a table of contents from the \section and \subsection commands.
 
 \newpage
-\input{intro.tex}
-
+\subfile{intro.tex}
 \newpage
-\input{ex0}
-
-
+\subfile{ex0}
 \subfile{ex1a}
-
-\input{ex1b}
-
-
-
+\subfile{ex1b}
 \end{document}

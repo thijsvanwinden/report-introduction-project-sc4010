@@ -23,6 +23,7 @@ From this plot it can be concluded that the gain 1 frequency is: $0.5Hz$
 \label{fig:1A3a_bode}
 \end{figure}
 
+\section{Differential Equations}
 
 The differential equation for this systems is defined as
 
@@ -49,6 +50,8 @@ The following frequency will be:
 \omega = 2\pi f = sqrt(\frac{1}{m}) => f = \frac{1}{2\pi}sqrt(\frac{1}{m}) 
 \end{equation}
 
+\newpage
+\section{Controller Design}
 This system needs to be stabilized. For this a controller with the form $C(s) = k_p + k_v s$ is used.
 
 The step responses below shows one the following things: 
@@ -111,6 +114,7 @@ The following effects on the bode plots can be observed:
 \item{The total gain of increases with higher $k_p$. You can observe that the bode plot has translated upwards.}
 \end{itemize}
 
+\section{Evaluating Parameter Influence}
 If the phase and gain margins are observed we see that an higher $K_p$ does barely increase the phase margin, whilst an higher $K_v$ does increase the phase margin a lot. The gain margin is not defined for these functions because the system itself is an double integrator. Therefore the phase of the system always starts at $-180\deg$. It is only defined when $K_p = 0$ because the system is then an single integrator with a phase of $-90\deg$	
 \newpage
 The bandwidth(bw) and phase margin(PM) parameters are chosen as: 
@@ -145,9 +149,11 @@ This results in the step response plot in figure ~\ref{fig:1A7_bw_50}
 \label{fig:1A7_bw_50}
 \end{figure}
 
-Evaluating the controllers with the different bandwidth gives some similarities. 
+\section{Evaluating Controller Performance}
+
+Evaluating the controllers with the different bandwidth give some similarities. 
 First of all they both have a overshoot near $35$ percent and a little oscillation afterwards. Also there is no steady state error. 
-The biggest difference is the rise time and settling time of the controllers. The controller with the bandwidth of $50Hz$ is much faster than the one with the $10Hz$ bandwidth.  
+The biggest difference is the rise time and settling time of the controllers. The controller with the bandwidth of $50Hz$ is much faster than the one with the $10Hz$ bandwidth. There seems to be a relation ship between the speed of the controller and the bandwidth. One can reason that for a higher frequency response the controller must be faster to follow this frequency. Therefore a high bandwidth controller will be faster than a low bandwidth controller in general. 
 
 %Effecten:
 
